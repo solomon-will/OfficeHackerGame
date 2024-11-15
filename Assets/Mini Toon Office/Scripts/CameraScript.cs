@@ -5,65 +5,57 @@ using UnityEngine;
 public class CameraScript : MonoBehaviour
 {
 
-    public GameObject Camera1;
-    public GameObject Camera2;
-    public GameObject Camera3;
+    public GameObject[] Cameras;
 
-    private AudioListener audio1;
-    private AudioListener audio2;
-    private AudioListener audio3;
+
+    private int currentCamera = 0;
+    private int cameraCount;
 
     void Start() {
-        audio1 = Camera1.GetComponent<AudioListener>();
-        audio2 = Camera2.GetComponent<AudioListener>();
-        audio3 = Camera3.GetComponent<AudioListener>();
+        cameraCount = Cameras.Length;
     }
 
     void Update()
     {
-        if (Input.GetKeyDown("1"))
-        {
-            CameraOne();
+        if (Input.GetKeyDown("1")) {
+            CameraDown();
         }
 
-        if (Input.GetKeyDown("2"))
-        {
-            CameraTwo();
+        if (Input.GetKeyDown("2")) {
+            CameraUp();
         }
+    }
 
-        if (Input.GetKeyDown("3")) {
-            CameraThree();
+    void CameraDown() {
+        int prev = currentCamera;
+        currentCamera--;
+        currentCamera = HandleEdges(currentCamera);
+        SetCamera(currentCamera, prev);
+    }
+
+    void CameraUp() {
+        int prev = currentCamera;
+        currentCamera++;
+        currentCamera = HandleEdges(currentCamera);
+        SetCamera(currentCamera, prev);
+    }
+
+    int HandleEdges(int current) {
+        if (current <= 0) {
+            current = cameraCount - 1;
+        } else if (current > cameraCount - 1) {
+            current = 0;
         }
-
-       
+        return current;
     }
 
-    void CameraOne()
-    {
-        Camera1.SetActive(true);
-        Camera2.SetActive(false);
-        Camera3.SetActive(false);
-        audio1.enabled = true;
-        audio2.enabled = false;
-        audio3.enabled = false;
-    }
+    void SetCamera(int cam, int prev) {
+        Debug.Log("SetCamera Running : " + cam);
+        Cameras[cam].SetActive(true);
+        Cameras[cam].GetComponent<AudioListener>().enabled = true;
 
-    void CameraTwo()
-    {
-        Camera2.SetActive(true);
-        Camera1.SetActive(false);  
-        Camera3.SetActive(false);
-        audio1.enabled = false;
-        audio2.enabled = true;
-        audio3.enabled = false;
-    }
+        Cameras[prev].SetActive(false);
+        Cameras[prev].GetComponent<AudioListener>().enabled = false;
 
-    void CameraThree() {
-        Camera3.SetActive(true);
-        Camera2.SetActive(false);
-        Camera1.SetActive(false);
-        audio1.enabled = false;
-        audio2.enabled = false;
-        audio3.enabled = true;
     }
 }
