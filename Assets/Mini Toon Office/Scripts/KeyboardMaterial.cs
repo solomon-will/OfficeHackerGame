@@ -1,13 +1,19 @@
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class KeyboardMaterial : MonoBehaviour
 {
     public GameObject targetObject;
 
     public Material newMaterial;
+    public Slider stressProgress;
+    public int stressImpact;
+
 
     void OnMouseDown()
     {
+        
         if (targetObject != null)
         {
             Renderer targetRenderer = targetObject.GetComponent<Renderer>();
@@ -30,5 +36,6 @@ public class KeyboardMaterial : MonoBehaviour
                 }
             }
         }
+        stressProgress.value += stressImpact;
     }
 }
