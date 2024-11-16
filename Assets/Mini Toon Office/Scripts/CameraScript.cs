@@ -13,6 +13,12 @@ public class CameraScript : MonoBehaviour
 
     void Start() {
         cameraCount = Cameras.Length;
+        foreach (GameObject cam in Cameras) {
+            cam.SetActive(false);
+            cam.GetComponent<AudioListener>().enabled = false;
+        }
+        Cameras[0].SetActive(true);
+        Cameras[0].GetComponent<AudioListener>().enabled = true;
     }
 
     void Update()

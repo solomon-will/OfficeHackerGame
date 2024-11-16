@@ -7,6 +7,7 @@ public class ProgressBar : MonoBehaviour
     public Slider stressProgress;
     public float timeLimit;
     public TimerScript timer;
+    public int winThreshold;
     private float timeElapsed = 0;
     private float timeRemain;
     private float deltaTimeSnapshot;
@@ -29,7 +30,7 @@ public class ProgressBar : MonoBehaviour
             SceneManager.LoadScene(3);
         }
 
-        if (stressProgress.value >= 5) {
+        if (stressProgress.value >= winThreshold) {
             SceneManager.LoadScene(2);
         }
     }

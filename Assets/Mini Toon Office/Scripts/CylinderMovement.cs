@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class CylinderMovement : MonoBehaviour
 {
-    public float speed = 2f; // Speed of the cylinder
-    public float rotationSpeed = 150f; // Rotation speed
-    public Transform[] waypoints; // Array of waypoints for the path
+    public float speed = 2f; 
+    public float rotationSpeed = 150f;
+    public Transform[] waypoints;
     private int currentWaypointIndex = 0;
 
     void Update()
