@@ -6,20 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Mini Toon Office/Scenes/StartScreen.unity
-    guid: 107c70a550e861b4c9b2d2225266fbc0
-  - enabled: 1
-    path: Assets/Mini Toon Office/Scenes/Prototype2 Map.unity
-    guid: 3d29faecdcb944f6f994cfae9698a71b
-  - enabled: 1
-    path: Assets/Mini Toon Office/Scenes/Game.unity
-    guid: 6cae73861e8bf4f14b90d4e6a42fb1d8
+    path: Assets/Mini Toon Office/Scenes/MainMenu.unity
+    guid: 19884b82cd29df24993b33e3add0851b
   - enabled: 1
     path: Assets/Mini Toon Office/Scenes/LoseScreen.unity
     guid: 414d73f11b4beab4393e5065947ca81a
   - enabled: 1
     path: Assets/Mini Toon Office/Scenes/WinScreen.unity
     guid: 8dd3938db4117a648920ba984b157a79
+  - enabled: 1
+    path: Assets/Mini Toon Office/Scenes/Game.unity
+    guid: 6cae73861e8bf4f14b90d4e6a42fb1d8
+  - enabled: 1
+    path: Assets/Mini Toon Office/Scenes/StartScreen.unity
+    guid: 107c70a550e861b4c9b2d2225266fbc0
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
   m_UseUCBPForAssetBundles: 0
