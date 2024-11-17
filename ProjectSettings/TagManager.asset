@@ -6,6 +6,7 @@ TagManager:
   tags:
   - AnnoyingBlock
   - Boss
+  - NPC
   layers:
   - Default
   - TransparentFX

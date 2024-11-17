@@ -12,8 +12,9 @@ public class MouseClick : MonoBehaviour
     void OnMouseDown() {
         computerText.text = "Login Successful.";
         stressProgress.value += stressImpact;
+
         foreach (GameObject block in puzzle) {
-            block.transform.position += new Vector3(0, 0, 0.03f);
+            block.transform.position += new Vector3(0.05f, 0, 0);
         }
 
     }
