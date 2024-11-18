@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1549207171339520378}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.2, y: 0.488, z: 0.494}
+  m_LocalPosition: {x: 0.175, y: 0.5, z: 0.48}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -136,7 +136,7 @@ Transform:
   m_GameObject: {fileID: 2347874420756479111}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.124, y: 0.488, z: 0.494}
+  m_LocalPosition: {x: -0.175, y: 0.5, z: 0.48}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -230,8 +230,8 @@ GameObject:
   - component: {fileID: 8924413704010192660}
   - component: {fileID: 2306489045871827790}
   m_Layer: 0
-  m_Name: Boss
-  m_TagString: Untagged
+  m_Name: NPC
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -245,7 +245,7 @@ Transform:
   m_GameObject: {fileID: 2512048868779190961}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.6, y: 1.52, z: 8.41}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -284,7 +284,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: de5ab4872f1b532428ab6c73ee1ce715, type: 2}
+  - {fileID: 2100000, guid: 9e2d22128b42f6945abaf3aa0b5165d2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
