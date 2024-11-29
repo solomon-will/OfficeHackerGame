@@ -25,7 +25,7 @@ public class ProgressBar : MonoBehaviour
         Debug.Log(timeElapsed);
         timeRemain -= deltaTimeSnapshot;
 
-        timer.UpdateTimer(timeRemain.ToString("F2"));
+        timer.UpdateTimer(timeRemain.ToString("F1"));
         if (timeElapsed >= timeLimit) {
             SceneManager.LoadScene(3);
         }
