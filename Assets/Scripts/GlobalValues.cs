@@ -1,9 +1,10 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class StressBlock : MonoBehaviour
+public class GlobalValues : MonoBehaviour
 {
-
+    public static int stress;
+    public Slider StressSlider;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,13 +14,6 @@ public class StressBlock : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    private void OnTriggerEnter(Collider other) {
-        if (other.CompareTag("Boss")) {
-            GlobalValues.stress += 5;
-            Destroy(gameObject);
-        }
+        StressSlider.value = stress;
     }
 }

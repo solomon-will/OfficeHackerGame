@@ -1,10 +1,9 @@
 using UnityEngine;
-using UnityEngine.UI;
+//using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class ProgressBar : MonoBehaviour
 {
-    public Slider stressProgress;
     public float timeLimit;
     public TimerScript timer;
     public int winThreshold;
@@ -30,7 +29,7 @@ public class ProgressBar : MonoBehaviour
             SceneManager.LoadScene(3);
         }
 
-        if (stressProgress.value >= winThreshold) {
+        if (GlobalValues.stress >= winThreshold) {
             SceneManager.LoadScene(2);
         }
     }

@@ -6,7 +6,7 @@ public class TimerScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        timer.text = "00:00";
+        timer.text = "00.0";
     }
 
     public void UpdateTimer(string time) {
