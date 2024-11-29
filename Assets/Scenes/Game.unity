@@ -286,7 +286,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: eecaa3198cbebd74e8cd79d0f71765cc, type: 2}
+  - {fileID: 2100000, guid: fac6997ebfb39364db1173ae4a1c49e6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -693,7 +693,7 @@ PrefabInstance:
     - target: {fileID: -4287718539082609346, guid: 6742d9d0591e16e48b701a5fd806e2ad, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: eecaa3198cbebd74e8cd79d0f71765cc, type: 2}
+      objectReference: {fileID: 2100000, guid: 7f64eac4bd640ef44ae0187dbfcb4089, type: 2}
     - target: {fileID: 919132149155446097, guid: 6742d9d0591e16e48b701a5fd806e2ad, type: 3}
       propertyPath: m_Name
       value: (Msh)DeskLight
@@ -1644,7 +1644,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: b2a58bff693e940b0bd58bc12b2218be, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 3441f6441092d3c459a48c3c48ea63c6, type: 2}
+      objectReference: {fileID: 2100000, guid: d06cbe6bddb870d438765bf1f774411d, type: 2}
     - target: {fileID: 919132149155446097, guid: b2a58bff693e940b0bd58bc12b2218be, type: 3}
       propertyPath: m_Name
       value: Secretary Walk-Thru
@@ -2100,7 +2100,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: cab363a401b518845bbac7b1c89c7a23, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
-      objectReference: {fileID: 2100000, guid: 3441f6441092d3c459a48c3c48ea63c6, type: 2}
+      objectReference: {fileID: 2100000, guid: eb0f168ce60c9424896bd8c33ac3f2c9, type: 2}
     - target: {fileID: 919132149155446097, guid: cab363a401b518845bbac7b1c89c7a23, type: 3}
       propertyPath: m_Name
       value: (Msh)Shelves1
@@ -2242,9 +2242,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 7f64eac4bd640ef44ae0187dbfcb4089, type: 2}
     - target: {fileID: -7511558181221131132, guid: dfe416dbdccccb0449425356461d7c67, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3441f6441092d3c459a48c3c48ea63c6, type: 2}
+    - target: {fileID: -7511558181221131132, guid: dfe416dbdccccb0449425356461d7c67, type: 3}
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
-      objectReference: {fileID: 2100000, guid: eecaa3198cbebd74e8cd79d0f71765cc, type: 2}
+      objectReference: {fileID: 2100000, guid: e03c61940200c9b428ea54b9134ba0a7, type: 2}
     - target: {fileID: 919132149155446097, guid: dfe416dbdccccb0449425356461d7c67, type: 3}
       propertyPath: m_Name
       value: (Msh)Stapler
@@ -2511,7 +2515,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: bf186ae0c211e3b46b8c3cf9bc7b1d27, type: 3}
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
-      objectReference: {fileID: 2100000, guid: a3a530523bec0cc41aed4f3a4d9da936, type: 2}
+      objectReference: {fileID: 2100000, guid: 3441f6441092d3c459a48c3c48ea63c6, type: 2}
     - target: {fileID: 919132149155446097, guid: bf186ae0c211e3b46b8c3cf9bc7b1d27, type: 3}
       propertyPath: m_Name
       value: (Msh)OfficeChair
@@ -2738,7 +2742,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31e87d42f3ffa2546b1f527e7a0a4b9d, type: 2}
+  - {fileID: 2100000, guid: 3441f6441092d3c459a48c3c48ea63c6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2983,7 +2987,7 @@ PrefabInstance:
     - target: {fileID: 466344540838074962, guid: 3a3cfcf7e16d943438d2bae99ffa6534, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: a3a530523bec0cc41aed4f3a4d9da936, type: 2}
+      objectReference: {fileID: 2100000, guid: e03c61940200c9b428ea54b9134ba0a7, type: 2}
     - target: {fileID: 919132149155446097, guid: 3a3cfcf7e16d943438d2bae99ffa6534, type: 3}
       propertyPath: m_Name
       value: (Msh)PenHolder
@@ -3156,7 +3160,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: eecaa3198cbebd74e8cd79d0f71765cc, type: 2}
+  - {fileID: 2100000, guid: fac6997ebfb39364db1173ae4a1c49e6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3664,7 +3668,7 @@ PrefabInstance:
     - target: {fileID: 2502298221915028001, guid: e0d31913657846c4e9344974cc7f73dd, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: a3a530523bec0cc41aed4f3a4d9da936, type: 2}
+      objectReference: {fileID: 2100000, guid: c0999236ab32ad94fb08c06e6694fa49, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7454529641193294972, guid: e0d31913657846c4e9344974cc7f73dd, type: 3}
@@ -3904,7 +3908,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newColor: {r: 1, g: 0, b: 0, a: 1}
-  stressProgress: {fileID: 649138181}
   stressImpact: 15
   newScale: {x: 2, y: 2, z: 2}
 --- !u!65 &251686169
@@ -4258,7 +4261,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: cab363a401b518845bbac7b1c89c7a23, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
-      objectReference: {fileID: 2100000, guid: 3441f6441092d3c459a48c3c48ea63c6, type: 2}
+      objectReference: {fileID: 2100000, guid: c0999236ab32ad94fb08c06e6694fa49, type: 2}
     - target: {fileID: 919132149155446097, guid: cab363a401b518845bbac7b1c89c7a23, type: 3}
       propertyPath: m_Name
       value: (Msh)Shelves1
@@ -4464,7 +4467,7 @@ PrefabInstance:
     - target: {fileID: -4287718539082609346, guid: 6742d9d0591e16e48b701a5fd806e2ad, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: eecaa3198cbebd74e8cd79d0f71765cc, type: 2}
+      objectReference: {fileID: 2100000, guid: 35261150e5398c0439d6fd7481f62b62, type: 2}
     - target: {fileID: 919132149155446097, guid: 6742d9d0591e16e48b701a5fd806e2ad, type: 3}
       propertyPath: m_Name
       value: (Msh)DeskLight
@@ -4777,7 +4780,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: bf186ae0c211e3b46b8c3cf9bc7b1d27, type: 3}
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
-      objectReference: {fileID: 2100000, guid: a3a530523bec0cc41aed4f3a4d9da936, type: 2}
+      objectReference: {fileID: 2100000, guid: 3441f6441092d3c459a48c3c48ea63c6, type: 2}
     - target: {fileID: 919132149155446097, guid: bf186ae0c211e3b46b8c3cf9bc7b1d27, type: 3}
       propertyPath: m_Name
       value: (Msh)OfficeChair
@@ -5243,7 +5246,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: eecaa3198cbebd74e8cd79d0f71765cc, type: 2}
+  - {fileID: 2100000, guid: 3441f6441092d3c459a48c3c48ea63c6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5353,7 +5356,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   painting: {fileID: 368887888}
   paintingBorder: {fileID: 1100647567}
-  stressProgress: {fileID: 649138181}
   stressImpact: 5
 --- !u!65 &368887891
 BoxCollider:
@@ -6902,7 +6904,7 @@ PrefabInstance:
     - target: {fileID: -2690203382554128138, guid: 18566a61b75973749b7a37b617d7fa4b, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 3441f6441092d3c459a48c3c48ea63c6, type: 2}
+      objectReference: {fileID: 2100000, guid: 7f64eac4bd640ef44ae0187dbfcb4089, type: 2}
     - target: {fileID: 919132149155446097, guid: 18566a61b75973749b7a37b617d7fa4b, type: 3}
       propertyPath: m_Name
       value: Hallway Computer
@@ -7039,7 +7041,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: b2a58bff693e940b0bd58bc12b2218be, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: d0ce895a6dcaa178487fddc5f7aa94cb, type: 2}
+      objectReference: {fileID: 2100000, guid: d06cbe6bddb870d438765bf1f774411d, type: 2}
     - target: {fileID: 919132149155446097, guid: b2a58bff693e940b0bd58bc12b2218be, type: 3}
       propertyPath: m_Name
       value: Meeting Room #1
@@ -7319,7 +7321,7 @@ PrefabInstance:
     - target: {fileID: 466344540838074962, guid: 3a3cfcf7e16d943438d2bae99ffa6534, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: a3a530523bec0cc41aed4f3a4d9da936, type: 2}
+      objectReference: {fileID: 2100000, guid: fac6997ebfb39364db1173ae4a1c49e6, type: 2}
     - target: {fileID: 919132149155446097, guid: 3a3cfcf7e16d943438d2bae99ffa6534, type: 3}
       propertyPath: m_Name
       value: (Msh)PenHolder
@@ -7403,9 +7405,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 7f64eac4bd640ef44ae0187dbfcb4089, type: 2}
     - target: {fileID: -7511558181221131132, guid: dfe416dbdccccb0449425356461d7c67, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3441f6441092d3c459a48c3c48ea63c6, type: 2}
+    - target: {fileID: -7511558181221131132, guid: dfe416dbdccccb0449425356461d7c67, type: 3}
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
-      objectReference: {fileID: 2100000, guid: eecaa3198cbebd74e8cd79d0f71765cc, type: 2}
+      objectReference: {fileID: 2100000, guid: 35261150e5398c0439d6fd7481f62b62, type: 2}
     - target: {fileID: 919132149155446097, guid: dfe416dbdccccb0449425356461d7c67, type: 3}
       propertyPath: m_Name
       value: (Msh)Stapler
@@ -7907,9 +7913,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 7f64eac4bd640ef44ae0187dbfcb4089, type: 2}
     - target: {fileID: -7511558181221131132, guid: dfe416dbdccccb0449425356461d7c67, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3441f6441092d3c459a48c3c48ea63c6, type: 2}
+    - target: {fileID: -7511558181221131132, guid: dfe416dbdccccb0449425356461d7c67, type: 3}
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
-      objectReference: {fileID: 2100000, guid: eecaa3198cbebd74e8cd79d0f71765cc, type: 2}
+      objectReference: {fileID: 2100000, guid: 35261150e5398c0439d6fd7481f62b62, type: 2}
     - target: {fileID: 919132149155446097, guid: dfe416dbdccccb0449425356461d7c67, type: 3}
       propertyPath: m_Name
       value: (Msh)Stapler
@@ -8358,7 +8368,7 @@ PrefabInstance:
     - target: {fileID: 466344540838074962, guid: 3a3cfcf7e16d943438d2bae99ffa6534, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: a3a530523bec0cc41aed4f3a4d9da936, type: 2}
+      objectReference: {fileID: 2100000, guid: 35261150e5398c0439d6fd7481f62b62, type: 2}
     - target: {fileID: 919132149155446097, guid: 3a3cfcf7e16d943438d2bae99ffa6534, type: 3}
       propertyPath: m_Name
       value: (Msh)PenHolder
@@ -8517,9 +8527,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 7f64eac4bd640ef44ae0187dbfcb4089, type: 2}
     - target: {fileID: -7511558181221131132, guid: dfe416dbdccccb0449425356461d7c67, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3441f6441092d3c459a48c3c48ea63c6, type: 2}
+    - target: {fileID: -7511558181221131132, guid: dfe416dbdccccb0449425356461d7c67, type: 3}
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
-      objectReference: {fileID: 2100000, guid: eecaa3198cbebd74e8cd79d0f71765cc, type: 2}
+      objectReference: {fileID: 2100000, guid: 35261150e5398c0439d6fd7481f62b62, type: 2}
     - target: {fileID: 919132149155446097, guid: dfe416dbdccccb0449425356461d7c67, type: 3}
       propertyPath: m_Name
       value: (Msh)Stapler
@@ -8609,7 +8623,7 @@ PrefabInstance:
     - target: {fileID: 2502298221915028001, guid: e0d31913657846c4e9344974cc7f73dd, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: a3a530523bec0cc41aed4f3a4d9da936, type: 2}
+      objectReference: {fileID: 2100000, guid: c0999236ab32ad94fb08c06e6694fa49, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7454529641193294972, guid: e0d31913657846c4e9344974cc7f73dd, type: 3}
@@ -8746,6 +8760,115 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4542106969686618187, guid: 5cb974f3c4bb83d49a1afda6b440d4d4, type: 3}
   m_PrefabInstance: {fileID: 1983566249}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &641286704
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 641286708}
+  - component: {fileID: 641286707}
+  - component: {fileID: 641286706}
+  - component: {fileID: 641286705}
+  m_Layer: 0
+  m_Name: floor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!64 &641286705
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641286704}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &641286706
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641286704}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0b45f97a140b9ce48939f70e529d18d8, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &641286707
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641286704}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &641286708
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641286704}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 14.25, y: 0.14, z: -87.78}
+  m_LocalScale: {x: 5.12573, y: 5.12573, z: 5.12573}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &645943267
 GameObject:
   m_ObjectHideFlags: 0
@@ -9107,6 +9230,7 @@ GameObject:
   - component: {fileID: 662050863}
   - component: {fileID: 662050862}
   - component: {fileID: 662050861}
+  - component: {fileID: 662050864}
   m_Layer: 0
   m_Name: StressManager
   m_TagString: Untagged
@@ -9139,7 +9263,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a714b1863481509468d9a2192708fc77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stressProgress: {fileID: 649138181}
   timeLimit: 60
   timer: {fileID: 662050861}
   winThreshold: 100
@@ -9158,6 +9281,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &662050864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662050860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0378ac05be33d9f4f9cf2b1f0a64ab77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StressSlider: {fileID: 0}
 --- !u!1001 &664120829
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10172,7 +10308,7 @@ PrefabInstance:
     - target: {fileID: 2502298221915028001, guid: e0d31913657846c4e9344974cc7f73dd, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: a3a530523bec0cc41aed4f3a4d9da936, type: 2}
+      objectReference: {fileID: 2100000, guid: eb0f168ce60c9424896bd8c33ac3f2c9, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7454529641193294972, guid: e0d31913657846c4e9344974cc7f73dd, type: 3}
@@ -10325,7 +10461,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: cab363a401b518845bbac7b1c89c7a23, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
-      objectReference: {fileID: 2100000, guid: 3441f6441092d3c459a48c3c48ea63c6, type: 2}
+      objectReference: {fileID: 2100000, guid: c0999236ab32ad94fb08c06e6694fa49, type: 2}
     - target: {fileID: 919132149155446097, guid: cab363a401b518845bbac7b1c89c7a23, type: 3}
       propertyPath: m_Name
       value: (Msh)Shelves1
@@ -10396,7 +10532,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: eecaa3198cbebd74e8cd79d0f71765cc, type: 2}
+  - {fileID: 2100000, guid: 35261150e5398c0439d6fd7481f62b62, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10524,7 +10660,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: bf186ae0c211e3b46b8c3cf9bc7b1d27, type: 3}
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
-      objectReference: {fileID: 2100000, guid: a3a530523bec0cc41aed4f3a4d9da936, type: 2}
+      objectReference: {fileID: 2100000, guid: fb698345bbbc4d74ba2ca7b2bb59eb9d, type: 2}
     - target: {fileID: 919132149155446097, guid: bf186ae0c211e3b46b8c3cf9bc7b1d27, type: 3}
       propertyPath: m_Name
       value: (Msh)OfficeChair
@@ -10590,7 +10726,7 @@ PrefabInstance:
     - target: {fileID: -4287718539082609346, guid: 6742d9d0591e16e48b701a5fd806e2ad, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: eecaa3198cbebd74e8cd79d0f71765cc, type: 2}
+      objectReference: {fileID: 2100000, guid: fac6997ebfb39364db1173ae4a1c49e6, type: 2}
     - target: {fileID: 919132149155446097, guid: 6742d9d0591e16e48b701a5fd806e2ad, type: 3}
       propertyPath: m_Name
       value: (Msh)DeskLight
@@ -10896,9 +11032,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 7f64eac4bd640ef44ae0187dbfcb4089, type: 2}
     - target: {fileID: -7511558181221131132, guid: dfe416dbdccccb0449425356461d7c67, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3441f6441092d3c459a48c3c48ea63c6, type: 2}
+    - target: {fileID: -7511558181221131132, guid: dfe416dbdccccb0449425356461d7c67, type: 3}
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
-      objectReference: {fileID: 2100000, guid: eecaa3198cbebd74e8cd79d0f71765cc, type: 2}
+      objectReference: {fileID: 2100000, guid: e03c61940200c9b428ea54b9134ba0a7, type: 2}
     - target: {fileID: 919132149155446097, guid: dfe416dbdccccb0449425356461d7c67, type: 3}
       propertyPath: m_Name
       value: (Msh)Stapler
@@ -11718,7 +11858,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: bf186ae0c211e3b46b8c3cf9bc7b1d27, type: 3}
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
-      objectReference: {fileID: 2100000, guid: a3a530523bec0cc41aed4f3a4d9da936, type: 2}
+      objectReference: {fileID: 2100000, guid: 7f64eac4bd640ef44ae0187dbfcb4089, type: 2}
     - target: {fileID: 919132149155446097, guid: bf186ae0c211e3b46b8c3cf9bc7b1d27, type: 3}
       propertyPath: m_Name
       value: (Msh)OfficeChair (1)
@@ -12240,7 +12380,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: b2a58bff693e940b0bd58bc12b2218be, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 3441f6441092d3c459a48c3c48ea63c6, type: 2}
+      objectReference: {fileID: 2100000, guid: d06cbe6bddb870d438765bf1f774411d, type: 2}
     - target: {fileID: 919132149155446097, guid: b2a58bff693e940b0bd58bc12b2218be, type: 3}
       propertyPath: m_Name
       value: Kitchen & Lounge
@@ -12399,6 +12539,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b4770c72ef9ca574a8fc2f08b8e7cb17, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 6569334455273125983, guid: b4770c72ef9ca574a8fc2f08b8e7cb17, type: 3}
     - target: {fileID: -5125235293642126008, guid: b4770c72ef9ca574a8fc2f08b8e7cb17, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.8315
@@ -13059,9 +13203,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 7f64eac4bd640ef44ae0187dbfcb4089, type: 2}
     - target: {fileID: -7511558181221131132, guid: dfe416dbdccccb0449425356461d7c67, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3441f6441092d3c459a48c3c48ea63c6, type: 2}
+    - target: {fileID: -7511558181221131132, guid: dfe416dbdccccb0449425356461d7c67, type: 3}
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
-      objectReference: {fileID: 2100000, guid: eecaa3198cbebd74e8cd79d0f71765cc, type: 2}
+      objectReference: {fileID: 2100000, guid: e03c61940200c9b428ea54b9134ba0a7, type: 2}
     - target: {fileID: 919132149155446097, guid: dfe416dbdccccb0449425356461d7c67, type: 3}
       propertyPath: m_Name
       value: (Msh)Stapler
@@ -13459,7 +13607,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b2a58bff693e940b0bd58bc12b2218be, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.66387165
+      value: 1.0584
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b2a58bff693e940b0bd58bc12b2218be, type: 3}
       propertyPath: m_LocalScale.z
@@ -13471,7 +13619,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b2a58bff693e940b0bd58bc12b2218be, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.33194414
+      value: -0.576
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b2a58bff693e940b0bd58bc12b2218be, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13508,7 +13656,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: b2a58bff693e940b0bd58bc12b2218be, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 3441f6441092d3c459a48c3c48ea63c6, type: 2}
+      objectReference: {fileID: 2100000, guid: d06cbe6bddb870d438765bf1f774411d, type: 2}
     - target: {fileID: 919132149155446097, guid: b2a58bff693e940b0bd58bc12b2218be, type: 3}
       propertyPath: m_Name
       value: toon_office_tile_ground_low_4x4
@@ -13670,7 +13818,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetObject: {fileID: 585674725}
   newMaterial: {fileID: 2100000, guid: 58f71c0d7da48244c8dd8392a2919f92, type: 2}
-  stressProgress: {fileID: 649138181}
   stressImpact: 10
 --- !u!4 &1004828783 stripped
 Transform:
@@ -14283,7 +14430,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: eecaa3198cbebd74e8cd79d0f71765cc, type: 2}
+  - {fileID: 2100000, guid: 35261150e5398c0439d6fd7481f62b62, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14650,7 +14797,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   painting: {fileID: 1100647567}
   paintingBorder: {fileID: 368887888}
-  stressProgress: {fileID: 649138181}
   stressImpact: 15
 --- !u!65 &1100647570
 BoxCollider:
@@ -15243,7 +15389,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: cab363a401b518845bbac7b1c89c7a23, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
-      objectReference: {fileID: 2100000, guid: 3441f6441092d3c459a48c3c48ea63c6, type: 2}
+      objectReference: {fileID: 2100000, guid: eb0f168ce60c9424896bd8c33ac3f2c9, type: 2}
     - target: {fileID: 919132149155446097, guid: cab363a401b518845bbac7b1c89c7a23, type: 3}
       propertyPath: m_Name
       value: (Msh)Shelves1
@@ -15671,7 +15817,7 @@ PrefabInstance:
     - target: {fileID: 2502298221915028001, guid: e0d31913657846c4e9344974cc7f73dd, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: a3a530523bec0cc41aed4f3a4d9da936, type: 2}
+      objectReference: {fileID: 2100000, guid: eb0f168ce60c9424896bd8c33ac3f2c9, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7454529641193294972, guid: e0d31913657846c4e9344974cc7f73dd, type: 3}
@@ -16052,7 +16198,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: b2a58bff693e940b0bd58bc12b2218be, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: d0ce895a6dcaa178487fddc5f7aa94cb, type: 2}
+      objectReference: {fileID: 2100000, guid: d06cbe6bddb870d438765bf1f774411d, type: 2}
     - target: {fileID: 919132149155446097, guid: b2a58bff693e940b0bd58bc12b2218be, type: 3}
       propertyPath: m_Name
       value: Meeting Room #3
@@ -16803,7 +16949,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: b2a58bff693e940b0bd58bc12b2218be, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 3441f6441092d3c459a48c3c48ea63c6, type: 2}
+      objectReference: {fileID: 2100000, guid: d06cbe6bddb870d438765bf1f774411d, type: 2}
     - target: {fileID: 919132149155446097, guid: b2a58bff693e940b0bd58bc12b2218be, type: 3}
       propertyPath: m_Name
       value: Boss's Office
@@ -16942,7 +17088,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   painting: {fileID: 1229199369}
   paintingBorder: {fileID: 0}
-  stressProgress: {fileID: 649138181}
   stressImpact: 5
 --- !u!65 &1229199372
 BoxCollider:
@@ -17311,7 +17456,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: b2a58bff693e940b0bd58bc12b2218be, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 3441f6441092d3c459a48c3c48ea63c6, type: 2}
+      objectReference: {fileID: 2100000, guid: d06cbe6bddb870d438765bf1f774411d, type: 2}
     - target: {fileID: 919132149155446097, guid: b2a58bff693e940b0bd58bc12b2218be, type: 3}
       propertyPath: m_Name
       value: General Work Area
@@ -18963,7 +19108,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: bf186ae0c211e3b46b8c3cf9bc7b1d27, type: 3}
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
-      objectReference: {fileID: 2100000, guid: a3a530523bec0cc41aed4f3a4d9da936, type: 2}
+      objectReference: {fileID: 2100000, guid: fb698345bbbc4d74ba2ca7b2bb59eb9d, type: 2}
     - target: {fileID: 919132149155446097, guid: bf186ae0c211e3b46b8c3cf9bc7b1d27, type: 3}
       propertyPath: m_Name
       value: (Msh)OfficeChair
@@ -19356,7 +19501,7 @@ PrefabInstance:
     - target: {fileID: 466344540838074962, guid: 3a3cfcf7e16d943438d2bae99ffa6534, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: a3a530523bec0cc41aed4f3a4d9da936, type: 2}
+      objectReference: {fileID: 2100000, guid: e03c61940200c9b428ea54b9134ba0a7, type: 2}
     - target: {fileID: 919132149155446097, guid: 3a3cfcf7e16d943438d2bae99ffa6534, type: 3}
       propertyPath: m_Name
       value: (Msh)PenHolder
@@ -19510,7 +19655,7 @@ PrefabInstance:
     - target: {fileID: 2502298221915028001, guid: e0d31913657846c4e9344974cc7f73dd, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: a3a530523bec0cc41aed4f3a4d9da936, type: 2}
+      objectReference: {fileID: 2100000, guid: c0999236ab32ad94fb08c06e6694fa49, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7454529641193294972, guid: e0d31913657846c4e9344974cc7f73dd, type: 3}
@@ -19738,7 +19883,7 @@ PrefabInstance:
     - target: {fileID: -4287718539082609346, guid: 6742d9d0591e16e48b701a5fd806e2ad, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: eecaa3198cbebd74e8cd79d0f71765cc, type: 2}
+      objectReference: {fileID: 2100000, guid: 35261150e5398c0439d6fd7481f62b62, type: 2}
     - target: {fileID: 919132149155446097, guid: 6742d9d0591e16e48b701a5fd806e2ad, type: 3}
       propertyPath: m_Name
       value: (Msh)DeskLight
@@ -20264,7 +20409,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: b2a58bff693e940b0bd58bc12b2218be, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: d0ce895a6dcaa178487fddc5f7aa94cb, type: 2}
+      objectReference: {fileID: 2100000, guid: d06cbe6bddb870d438765bf1f774411d, type: 2}
     - target: {fileID: 919132149155446097, guid: b2a58bff693e940b0bd58bc12b2218be, type: 3}
       propertyPath: m_Name
       value: Meeting Room #2
@@ -20862,7 +21007,7 @@ PrefabInstance:
     - target: {fileID: 466344540838074962, guid: 3a3cfcf7e16d943438d2bae99ffa6534, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: a3a530523bec0cc41aed4f3a4d9da936, type: 2}
+      objectReference: {fileID: 2100000, guid: 11ed21415b661da499e94e4e9e5c47f4, type: 2}
     - target: {fileID: 919132149155446097, guid: 3a3cfcf7e16d943438d2bae99ffa6534, type: 3}
       propertyPath: m_Name
       value: (Msh)PenHolder
@@ -21049,7 +21194,7 @@ PrefabInstance:
     - target: {fileID: -4287718539082609346, guid: 6742d9d0591e16e48b701a5fd806e2ad, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: eecaa3198cbebd74e8cd79d0f71765cc, type: 2}
+      objectReference: {fileID: 2100000, guid: fac6997ebfb39364db1173ae4a1c49e6, type: 2}
     - target: {fileID: 919132149155446097, guid: 6742d9d0591e16e48b701a5fd806e2ad, type: 3}
       propertyPath: m_Name
       value: (Msh)DeskLight
@@ -21215,7 +21360,7 @@ PrefabInstance:
     - target: {fileID: 466344540838074962, guid: 3a3cfcf7e16d943438d2bae99ffa6534, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: a3a530523bec0cc41aed4f3a4d9da936, type: 2}
+      objectReference: {fileID: 2100000, guid: 35261150e5398c0439d6fd7481f62b62, type: 2}
     - target: {fileID: 919132149155446097, guid: 3a3cfcf7e16d943438d2bae99ffa6534, type: 3}
       propertyPath: m_Name
       value: (Msh)PenHolder
@@ -22199,7 +22344,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: cab363a401b518845bbac7b1c89c7a23, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
-      objectReference: {fileID: 2100000, guid: 3441f6441092d3c459a48c3c48ea63c6, type: 2}
+      objectReference: {fileID: 2100000, guid: eb0f168ce60c9424896bd8c33ac3f2c9, type: 2}
     - target: {fileID: 919132149155446097, guid: cab363a401b518845bbac7b1c89c7a23, type: 3}
       propertyPath: m_Name
       value: (Msh)Shelves1
@@ -22713,7 +22858,7 @@ PrefabInstance:
     - target: {fileID: -4287718539082609346, guid: 6742d9d0591e16e48b701a5fd806e2ad, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: eecaa3198cbebd74e8cd79d0f71765cc, type: 2}
+      objectReference: {fileID: 2100000, guid: 3441f6441092d3c459a48c3c48ea63c6, type: 2}
     - target: {fileID: 919132149155446097, guid: 6742d9d0591e16e48b701a5fd806e2ad, type: 3}
       propertyPath: m_Name
       value: (Msh)DeskLight
@@ -23145,7 +23290,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: bf186ae0c211e3b46b8c3cf9bc7b1d27, type: 3}
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
-      objectReference: {fileID: 2100000, guid: a3a530523bec0cc41aed4f3a4d9da936, type: 2}
+      objectReference: {fileID: 2100000, guid: 3441f6441092d3c459a48c3c48ea63c6, type: 2}
     - target: {fileID: 919132149155446097, guid: bf186ae0c211e3b46b8c3cf9bc7b1d27, type: 3}
       propertyPath: m_Name
       value: (Msh)OfficeChair
@@ -23450,7 +23595,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetObject: {fileID: 1992919294}
   newMaterial: {fileID: 2100000, guid: 58f71c0d7da48244c8dd8392a2919f92, type: 2}
-  stressProgress: {fileID: 649138181}
   stressImpact: 15
 --- !u!65 &1808128385
 BoxCollider:
@@ -23651,9 +23795,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 7f64eac4bd640ef44ae0187dbfcb4089, type: 2}
     - target: {fileID: -7511558181221131132, guid: dfe416dbdccccb0449425356461d7c67, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3441f6441092d3c459a48c3c48ea63c6, type: 2}
+    - target: {fileID: -7511558181221131132, guid: dfe416dbdccccb0449425356461d7c67, type: 3}
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
-      objectReference: {fileID: 2100000, guid: eecaa3198cbebd74e8cd79d0f71765cc, type: 2}
+      objectReference: {fileID: 2100000, guid: fac6997ebfb39364db1173ae4a1c49e6, type: 2}
     - target: {fileID: 919132149155446097, guid: dfe416dbdccccb0449425356461d7c67, type: 3}
       propertyPath: m_Name
       value: (Msh)Stapler
@@ -24077,7 +24225,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: bf186ae0c211e3b46b8c3cf9bc7b1d27, type: 3}
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
-      objectReference: {fileID: 2100000, guid: a3a530523bec0cc41aed4f3a4d9da936, type: 2}
+      objectReference: {fileID: 2100000, guid: 3441f6441092d3c459a48c3c48ea63c6, type: 2}
     - target: {fileID: 919132149155446097, guid: bf186ae0c211e3b46b8c3cf9bc7b1d27, type: 3}
       propertyPath: m_Name
       value: (Msh)OfficeChair
@@ -24515,7 +24663,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: bf186ae0c211e3b46b8c3cf9bc7b1d27, type: 3}
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
-      objectReference: {fileID: 2100000, guid: a3a530523bec0cc41aed4f3a4d9da936, type: 2}
+      objectReference: {fileID: 2100000, guid: fb698345bbbc4d74ba2ca7b2bb59eb9d, type: 2}
     - target: {fileID: 919132149155446097, guid: bf186ae0c211e3b46b8c3cf9bc7b1d27, type: 3}
       propertyPath: m_Name
       value: (Msh)OfficeChair
@@ -24898,7 +25046,7 @@ PrefabInstance:
     - target: {fileID: 2502298221915028001, guid: e0d31913657846c4e9344974cc7f73dd, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: a3a530523bec0cc41aed4f3a4d9da936, type: 2}
+      objectReference: {fileID: 2100000, guid: eb0f168ce60c9424896bd8c33ac3f2c9, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7454529641193294972, guid: e0d31913657846c4e9344974cc7f73dd, type: 3}
@@ -25176,7 +25324,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newColor: {r: 1, g: 0, b: 0, a: 1}
-  stressProgress: {fileID: 649138181}
   stressImpact: 15
   newScale: {x: 2, y: 2, z: 2}
 --- !u!65 &1992919299
@@ -25504,7 +25651,7 @@ PrefabInstance:
     - target: {fileID: 2502298221915028001, guid: e0d31913657846c4e9344974cc7f73dd, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: a3a530523bec0cc41aed4f3a4d9da936, type: 2}
+      objectReference: {fileID: 2100000, guid: c0999236ab32ad94fb08c06e6694fa49, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7454529641193294972, guid: e0d31913657846c4e9344974cc7f73dd, type: 3}
@@ -25555,7 +25702,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   computerText: {fileID: 1133975335}
-  stressProgress: {fileID: 649138181}
   stressImpact: 10
   puzzle:
   - {fileID: 578014149}
@@ -25625,7 +25771,7 @@ PrefabInstance:
     - target: {fileID: 466344540838074962, guid: 3a3cfcf7e16d943438d2bae99ffa6534, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: a3a530523bec0cc41aed4f3a4d9da936, type: 2}
+      objectReference: {fileID: 2100000, guid: e03c61940200c9b428ea54b9134ba0a7, type: 2}
     - target: {fileID: 919132149155446097, guid: 3a3cfcf7e16d943438d2bae99ffa6534, type: 3}
       propertyPath: m_Name
       value: (Msh)PenHolder
@@ -25762,7 +25908,7 @@ PrefabInstance:
     - target: {fileID: 2502298221915028001, guid: e0d31913657846c4e9344974cc7f73dd, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: a3a530523bec0cc41aed4f3a4d9da936, type: 2}
+      objectReference: {fileID: 2100000, guid: eb0f168ce60c9424896bd8c33ac3f2c9, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7454529641193294972, guid: e0d31913657846c4e9344974cc7f73dd, type: 3}
@@ -25953,7 +26099,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: cab363a401b518845bbac7b1c89c7a23, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
-      objectReference: {fileID: 2100000, guid: 3441f6441092d3c459a48c3c48ea63c6, type: 2}
+      objectReference: {fileID: 2100000, guid: c0999236ab32ad94fb08c06e6694fa49, type: 2}
     - target: {fileID: 919132149155446097, guid: cab363a401b518845bbac7b1c89c7a23, type: 3}
       propertyPath: m_Name
       value: (Msh)Shelves1
@@ -26035,7 +26181,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: cab363a401b518845bbac7b1c89c7a23, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
-      objectReference: {fileID: 2100000, guid: 3441f6441092d3c459a48c3c48ea63c6, type: 2}
+      objectReference: {fileID: 2100000, guid: c0999236ab32ad94fb08c06e6694fa49, type: 2}
     - target: {fileID: 919132149155446097, guid: cab363a401b518845bbac7b1c89c7a23, type: 3}
       propertyPath: m_Name
       value: (Msh)Shelves1
@@ -26474,9 +26620,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 7f64eac4bd640ef44ae0187dbfcb4089, type: 2}
     - target: {fileID: -7511558181221131132, guid: dfe416dbdccccb0449425356461d7c67, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3441f6441092d3c459a48c3c48ea63c6, type: 2}
+    - target: {fileID: -7511558181221131132, guid: dfe416dbdccccb0449425356461d7c67, type: 3}
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
-      objectReference: {fileID: 2100000, guid: eecaa3198cbebd74e8cd79d0f71765cc, type: 2}
+      objectReference: {fileID: 2100000, guid: fac6997ebfb39364db1173ae4a1c49e6, type: 2}
     - target: {fileID: 919132149155446097, guid: dfe416dbdccccb0449425356461d7c67, type: 3}
       propertyPath: m_Name
       value: (Msh)Stapler
@@ -26847,7 +26997,7 @@ PrefabInstance:
     - target: {fileID: 466344540838074962, guid: 3a3cfcf7e16d943438d2bae99ffa6534, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: a3a530523bec0cc41aed4f3a4d9da936, type: 2}
+      objectReference: {fileID: 2100000, guid: 11ed21415b661da499e94e4e9e5c47f4, type: 2}
     - target: {fileID: 919132149155446097, guid: 3a3cfcf7e16d943438d2bae99ffa6534, type: 3}
       propertyPath: m_Name
       value: (Msh)PenHolder
@@ -27028,7 +27178,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cab363a401b518845bbac7b1c89c7a23, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 65.08979
+      value: 65.09
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cab363a401b518845bbac7b1c89c7a23, type: 3}
       propertyPath: m_LocalPosition.y
@@ -27036,7 +27186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cab363a401b518845bbac7b1c89c7a23, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -23.56699
+      value: -23.523
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cab363a401b518845bbac7b1c89c7a23, type: 3}
       propertyPath: m_LocalRotation.w
@@ -27073,7 +27223,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: cab363a401b518845bbac7b1c89c7a23, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
-      objectReference: {fileID: 2100000, guid: 3441f6441092d3c459a48c3c48ea63c6, type: 2}
+      objectReference: {fileID: 2100000, guid: eb0f168ce60c9424896bd8c33ac3f2c9, type: 2}
     - target: {fileID: 919132149155446097, guid: cab363a401b518845bbac7b1c89c7a23, type: 3}
       propertyPath: m_Name
       value: (Msh)Shelves1
@@ -27138,7 +27288,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetObject: {fileID: 251686166}
   newMaterial: {fileID: 2100000, guid: 58f71c0d7da48244c8dd8392a2919f92, type: 2}
-  stressProgress: {fileID: 649138181}
   stressImpact: 15
 --- !u!65 &2091322278
 BoxCollider:
@@ -27217,7 +27366,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: eecaa3198cbebd74e8cd79d0f71765cc, type: 2}
+  - {fileID: 2100000, guid: 7f64eac4bd640ef44ae0187dbfcb4089, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -28221,6 +28370,14 @@ PrefabInstance:
       value: 0.9227
       objectReference: {fileID: 0}
     - target: {fileID: 8832492840191548912, guid: d0c678f5c21191e4aadd685b22906f70, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832492840191548912, guid: d0c678f5c21191e4aadd685b22906f70, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.107
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832492840191548912, guid: d0c678f5c21191e4aadd685b22906f70, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.03609
       objectReference: {fileID: 0}
@@ -28413,3 +28570,4 @@ SceneRoots:
   - {fileID: 512175789}
   - {fileID: 580022259}
   - {fileID: 1685386025}
+  - {fileID: 641286708}
