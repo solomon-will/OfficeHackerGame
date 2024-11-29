@@ -20007,43 +20007,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2198369985748330525, guid: 5cb974f3c4bb83d49a1afda6b440d4d4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 24.139
+      value: 24.112
       objectReference: {fileID: 0}
     - target: {fileID: 2198369985748330525, guid: 5cb974f3c4bb83d49a1afda6b440d4d4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.419
+      value: 7.64
       objectReference: {fileID: 0}
     - target: {fileID: 2198369985748330525, guid: 5cb974f3c4bb83d49a1afda6b440d4d4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 37.473
+      value: 37.318
       objectReference: {fileID: 0}
     - target: {fileID: 2198369985748330525, guid: 5cb974f3c4bb83d49a1afda6b440d4d4, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.2223154
+      value: -0.22046264
       objectReference: {fileID: 0}
     - target: {fileID: 2198369985748330525, guid: 5cb974f3c4bb83d49a1afda6b440d4d4, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.0010206716
+      value: -0.028660309
       objectReference: {fileID: 0}
     - target: {fileID: 2198369985748330525, guid: 5cb974f3c4bb83d49a1afda6b440d4d4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9747962
+      value: 0.9635879
       objectReference: {fileID: 0}
     - target: {fileID: 2198369985748330525, guid: 5cb974f3c4bb83d49a1afda6b440d4d4, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.018634183
+      value: -0.14857091
       objectReference: {fileID: 0}
     - target: {fileID: 2198369985748330525, guid: 5cb974f3c4bb83d49a1afda6b440d4d4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 2.056
+      value: 17.395
       objectReference: {fileID: 0}
     - target: {fileID: 2198369985748330525, guid: 5cb974f3c4bb83d49a1afda6b440d4d4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 205.705
+      value: 205.869
       objectReference: {fileID: 0}
     - target: {fileID: 2198369985748330525, guid: 5cb974f3c4bb83d49a1afda6b440d4d4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0.589
+      value: 0.617
       objectReference: {fileID: 0}
     - target: {fileID: 4542106969686618187, guid: 5cb974f3c4bb83d49a1afda6b440d4d4, type: 3}
       propertyPath: m_Name
@@ -28542,16 +28542,16 @@ NavMeshAgent:
   m_GameObject: {fileID: 1415290045}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5000038
+  m_Radius: 0.8
   m_Speed: 10
   m_Acceleration: 8
   avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_AngularSpeed: 360
   m_StoppingDistance: 0.1
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.9999999
+  m_Height: 2.1
   m_BaseOffset: 0.99999994
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
