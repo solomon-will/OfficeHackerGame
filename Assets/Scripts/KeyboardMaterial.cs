@@ -35,7 +35,12 @@ public class KeyboardMaterial : MonoBehaviour
                     Debug.Log("Target object does not have a second material!");
                 }
             }
+
+            GlobalValues.stress += stressImpact;
         }
-        GlobalValues.stress += stressImpact;
+
+        targetObject = null;
+
+        
     }
 }
