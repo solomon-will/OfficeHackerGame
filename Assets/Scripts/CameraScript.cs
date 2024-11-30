@@ -6,10 +6,11 @@ public class CameraScript : MonoBehaviour
 {
 
     public GameObject[] Cameras;
-
+    public DisplayCameraName camDisplay;
 
     private int currentCamera = 0;
     private int cameraCount;
+
 
     void Start() {
         cameraCount = Cameras.Length;
@@ -56,7 +57,7 @@ public class CameraScript : MonoBehaviour
     }
 
     void SetCamera(int cam, int prev) {
-        Debug.Log("SetCamera Running : " + cam);
+        camDisplay.UpdateCameraDisplay(Cameras[cam].name);
         Cameras[cam].SetActive(true);
         Cameras[cam].GetComponent<AudioListener>().enabled = true;
 
