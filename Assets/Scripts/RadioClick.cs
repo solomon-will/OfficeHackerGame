@@ -15,5 +15,9 @@ public class RadioClick : MonoBehaviour
         {
             audioSource.Play();
         }
+        else
+        {
+            audioSource.Stop();
+        }
     }
 }
