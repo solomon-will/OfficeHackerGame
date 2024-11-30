@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public class BossHybridWander : MonoBehaviour
+public class CylinderMovement : MonoBehaviour
 {
     public NavMeshAgent agent;
     public float wanderRadius = 10f;
@@ -11,6 +11,9 @@ public class BossHybridWander : MonoBehaviour
     private float timer;
     private int currentTargetIndex = 0;
 
+    private bool isChasingRadio = false; // Tracks if the boss is chasing the radio
+    private GameObject radioObject; // Tracks the radio object
+
     void Start()
     {
         if (agent == null)
@@ -18,10 +21,25 @@ public class BossHybridWander : MonoBehaviour
 
         TargetAreaManager manager = FindObjectOfType<TargetAreaManager>();
         targetAreas = manager.GetTargetAreas();
+
+        // Subscribe to the radio event
+        RadioClick.OnRadioActivated += MoveToRadio;
     }
 
     void Update()
     {
+        if (isChasingRadio)
+        {
+            // Check if boss has reached the radio
+            if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
+            {
+                TurnOffRadio();
+                isChasingRadio = false; // Resume wandering behavior
+            }
+            return;
+        }
+
+        // Regular wandering behavior
         timer += Time.deltaTime;
 
         if (timer >= wanderInterval)
@@ -38,6 +56,12 @@ public class BossHybridWander : MonoBehaviour
         }
     }
 
+    void OnDestroy()
+    {
+        // Unsubscribe to avoid memory leaks
+        RadioClick.OnRadioActivated -= MoveToRadio;
+    }
+
     void WanderRandomly()
     {
         Vector3 newPos = RandomNavMeshPoint(transform.position, wanderRadius);
@@ -50,6 +74,37 @@ public class BossHybridWander : MonoBehaviour
         agent.SetDestination(targetPosition);
 
         currentTargetIndex = (currentTargetIndex + 1) % targetAreas.Length;
+    }
+
+    void MoveToRadio(Vector3 radioPosition)
+    {
+        // Make sure the radioObject is found when needed
+        radioObject = FindObjectOfType<RadioClick>()?.gameObject;
+
+        if (radioObject != null)
+        {
+            // Set chasing state and move toward the radio
+            isChasingRadio = true;
+            agent.SetDestination(radioPosition);
+            Debug.Log("Boss is moving to the radio at " + radioPosition);
+        }
+        else
+        {
+            Debug.LogError("Radio object is not assigned!");
+        }
+    }
+
+    void TurnOffRadio()
+    {
+        if (radioObject != null)
+        {
+            RadioClick radioScript = radioObject.GetComponent<RadioClick>();
+            if (radioScript != null)
+            {
+                radioScript.TurnOff();
+                Debug.Log("Boss turned off the radio.");
+            }
+        }
     }
 
     Vector3 RandomNavMeshPoint(Vector3 origin, float radius)
