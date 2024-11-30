@@ -1,35 +1,66 @@
 using UnityEngine;
+using UnityEngine.AI;
 
-public class CylinderMovement : MonoBehaviour
+public class BossHybridWander : MonoBehaviour
 {
-    public float speed = 2f; 
-    public float rotationSpeed = 150f;
-    public Transform[] waypoints;
-    private int currentWaypointIndex = 0;
+    public NavMeshAgent agent;
+    public float wanderRadius = 10f;
+    public float wanderInterval = 3f;
+
+    private Transform[] targetAreas;
+    private float timer;
+    private int currentTargetIndex = 0;
+
+    void Start()
+    {
+        if (agent == null)
+            agent = GetComponent<NavMeshAgent>();
+
+        TargetAreaManager manager = FindObjectOfType<TargetAreaManager>();
+        targetAreas = manager.GetTargetAreas();
+    }
 
     void Update()
     {
-        if (waypoints.Length == 0) return;
+        timer += Time.deltaTime;
 
-        // Move towards the current waypoint
-        Transform targetWaypoint = waypoints[currentWaypointIndex];
-        Vector3 direction = targetWaypoint.position - transform.position;
-        float distance = direction.magnitude;
-
-        // If the cylinder is close to the waypoint, switch to the next one
-        if (distance < 0.1f)
+        if (timer >= wanderInterval)
         {
-            currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Length;
+            if (Random.value < 0.3f && targetAreas.Length > 0)
+            {
+                MoveToNextTarget();
+            }
+            else
+            {
+                WanderRandomly();
+            }
+            timer = 0;
         }
-        else
-        {
-            // Move and rotate towards the waypoint
-            direction.Normalize();
-            transform.position += direction * speed * Time.deltaTime;
+    }
 
-            // Rotate the cylinder to face the direction of movement
-            Quaternion lookRotation = Quaternion.LookRotation(direction);
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, lookRotation, rotationSpeed * Time.deltaTime);
+    void WanderRandomly()
+    {
+        Vector3 newPos = RandomNavMeshPoint(transform.position, wanderRadius);
+        agent.SetDestination(newPos);
+    }
+
+    void MoveToNextTarget()
+    {
+        Vector3 targetPosition = targetAreas[currentTargetIndex].position;
+        agent.SetDestination(targetPosition);
+
+        currentTargetIndex = (currentTargetIndex + 1) % targetAreas.Length;
+    }
+
+    Vector3 RandomNavMeshPoint(Vector3 origin, float radius)
+    {
+        Vector3 randomDirection = Random.insideUnitSphere * radius;
+        randomDirection += origin;
+
+        if (NavMesh.SamplePosition(randomDirection, out NavMeshHit hit, radius, 1))
+        {
+            return hit.position;
         }
+        return origin;
     }
 }
