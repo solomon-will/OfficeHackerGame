@@ -15216,7 +15216,7 @@ GameObject:
   - component: {fileID: 1133975336}
   - component: {fileID: 1133975335}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: LoginPrompt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28503,6 +28503,10 @@ PrefabInstance:
       value: LoungeRadio
       objectReference: {fileID: 0}
     - target: {fileID: 2054259214822627472, guid: b080a05d5dc24814997f375e7888dca5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054259214822627472, guid: b080a05d5dc24814997f375e7888dca5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.05228
       objectReference: {fileID: 0}
@@ -28540,6 +28544,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2054259214822627472, guid: b080a05d5dc24814997f375e7888dca5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054259214822627472, guid: b080a05d5dc24814997f375e7888dca5, type: 3}
+      propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
