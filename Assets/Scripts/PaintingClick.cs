@@ -5,10 +5,11 @@ public class PaintingClick : MonoBehaviour
 {
     public GameObject painting;
     public GameObject paintingBorder;
+    public Slider stressProgress;
     public int stressImpact;
 
     void OnMouseDown() {
-        GlobalValues.stress += stressImpact;
+        stressProgress.value += stressImpact;
         Destroy(painting);
         Destroy(paintingBorder);
     }

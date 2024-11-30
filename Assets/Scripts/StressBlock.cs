@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class StressBlock : MonoBehaviour
 {
-
+    public Slider stressProgress;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,7 +18,7 @@ public class StressBlock : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) {
         if (other.CompareTag("Boss")) {
-            GlobalValues.stress += 5;
+            stressProgress.value += 5;
             Destroy(gameObject);
         }
     }

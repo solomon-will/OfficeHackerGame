@@ -7,7 +7,7 @@ public class KeyboardMaterial : MonoBehaviour
     public GameObject targetObject;
 
     public Material newMaterial;
-
+    public Slider stressProgress;
     public int stressImpact;
 
 
@@ -36,6 +36,6 @@ public class KeyboardMaterial : MonoBehaviour
                 }
             }
         }
-        GlobalValues.stress += stressImpact;
+        stressProgress.value += stressImpact;
     }
 }

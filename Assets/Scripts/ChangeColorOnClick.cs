@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class ChangeColorOnClick : MonoBehaviour
 {
     public Color newColor = Color.red;
+    public Slider stressProgress;
     public int stressImpact;
     
     public Vector3 newScale = new Vector3(2f, 2f, 2f); 
@@ -21,7 +22,7 @@ public class ChangeColorOnClick : MonoBehaviour
         transform.localScale = newScale;
         Debug.Log("scale changed"); 
 
-        GlobalValues.stress += stressImpact;
+        stressProgress.value += stressImpact;
 
     }
 }
