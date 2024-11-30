@@ -8,6 +8,7 @@ TagManager:
   - Boss
   - NPC
   - Target Area
+  - Walk Zone
   layers:
   - Default
   - TransparentFX

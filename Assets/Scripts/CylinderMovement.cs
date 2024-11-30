@@ -5,7 +5,7 @@ public class BossHybridWander : MonoBehaviour
 {
     public NavMeshAgent agent;
     public float wanderRadius = 10f;
-    public float wanderInterval = 3f;
+    public float wanderInterval = 1f;
 
     private Transform[] targetAreas;
     private float timer;
@@ -26,7 +26,7 @@ public class BossHybridWander : MonoBehaviour
 
         if (timer >= wanderInterval)
         {
-            if (Random.value < 0.3f && targetAreas.Length > 0)
+            if (Random.value < 0.01f && targetAreas.Length > 0)
             {
                 MoveToNextTarget();
             }
