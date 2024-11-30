@@ -9293,7 +9293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0378ac05be33d9f4f9cf2b1f0a64ab77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StressSlider: {fileID: 0}
+  StressSlider: {fileID: 649138181}
 --- !u!1001 &664120829
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15740,7 +15740,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5818838321533668193, guid: 7135641ecdaa438449e7c41cbe92103b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1527151621}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2512048868779190961, guid: 7135641ecdaa438449e7c41cbe92103b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1528722760}
   m_SourcePrefab: {fileID: 100100000, guid: 7135641ecdaa438449e7c41cbe92103b, type: 3}
 --- !u!1001 &1154190687
 PrefabInstance:
@@ -21460,6 +21463,33 @@ Transform:
   - {fileID: 1864253643}
   m_Father: {fileID: 1137812435}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1528722755 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2512048868779190961, guid: 7135641ecdaa438449e7c41cbe92103b, type: 3}
+  m_PrefabInstance: {fileID: 1151355121}
+  m_PrefabAsset: {fileID: 0}
+--- !u!195 &1528722760
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528722755}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5000075
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &1530589895
 GameObject:
   m_ObjectHideFlags: 0
