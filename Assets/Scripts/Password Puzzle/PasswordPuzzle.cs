@@ -13,7 +13,7 @@ public class PasswordPuzzle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (CameraScript.currentCameraName = "Hallway Computer") {
+        if (CameraScript.currentCameraName == "Hallway Computer") {
             if (Input.inputString.Length > 0) {
                 if (Input.GetKeyDown(KeyCode.Backspace)) {
                     if (userInput.Length > 0) {
@@ -38,7 +38,7 @@ public class PasswordPuzzle : MonoBehaviour
 
     string SortInput(string str) {
         char[] inputChars = str.ToCharArray();
-        Array.Sort(inputChars);
+        inputChars.Sort(inputChars);
         return new string(inputChars);
     }
 
