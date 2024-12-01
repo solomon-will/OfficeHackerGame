@@ -8402,7 +8402,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 1575180014}
+  m_Camera: {fileID: 1593556121}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -20624,11 +20624,6 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
---- !u!20 &1575180014 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 4352886884442541345, guid: 5cb974f3c4bb83d49a1afda6b440d4d4, type: 3}
-  m_PrefabInstance: {fileID: 559261267}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1575820631 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2743037689681575029, guid: a2e6444451e398844bfa41ba8f0ebfb2, type: 3}
@@ -21384,6 +21379,11 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!20 &1593556121 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 4352886884442541345, guid: 5cb974f3c4bb83d49a1afda6b440d4d4, type: 3}
+  m_PrefabInstance: {fileID: 1097436858}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1595159675
 GameObject:
   m_ObjectHideFlags: 0
@@ -25684,7 +25684,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a714b1863481509468d9a2192708fc77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLimit: 60
+  timeLimit: 10
   timer: {fileID: 1856519358}
   winThreshold: 100
 --- !u!4 &1856519360
