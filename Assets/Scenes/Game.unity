@@ -4548,7 +4548,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4542106969686618187, guid: 5cb974f3c4bb83d49a1afda6b440d4d4, type: 3}
       propertyPath: m_Name
-      value: LoungeVending2
+      value: Lounge
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9322,7 +9322,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4542106969686618187, guid: 5cb974f3c4bb83d49a1afda6b440d4d4, type: 3}
       propertyPath: m_Name
-      value: MainOffice1
+      value: Main Office 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9742,7 +9742,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4542106969686618187, guid: 5cb974f3c4bb83d49a1afda6b440d4d4, type: 3}
       propertyPath: m_Name
-      value: Office1
+      value: Hallway Computer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11356,7 +11356,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4542106969686618187, guid: 5cb974f3c4bb83d49a1afda6b440d4d4, type: 3}
       propertyPath: m_Name
-      value: MainOffice3
+      value: Main Office 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11417,7 +11417,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4542106969686618187, guid: 5cb974f3c4bb83d49a1afda6b440d4d4, type: 3}
       propertyPath: m_Name
-      value: MainOffice4_Cubicle2
+      value: Cubicle 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20745,7 +20745,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4542106969686618187, guid: 5cb974f3c4bb83d49a1afda6b440d4d4, type: 3}
       propertyPath: m_Name
-      value: MainOffice2
+      value: Main Office 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26060,7 +26060,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4542106969686618187, guid: 5cb974f3c4bb83d49a1afda6b440d4d4, type: 3}
       propertyPath: m_Name
-      value: LoungeVending
+      value: Lounge (Vending)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27265,7 +27265,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4542106969686618187, guid: 5cb974f3c4bb83d49a1afda6b440d4d4, type: 3}
       propertyPath: m_Name
-      value: MainOffice4_Cubicle
+      value: Cubicle 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
