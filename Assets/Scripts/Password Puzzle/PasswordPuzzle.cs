@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using System;
 public class PasswordPuzzle : MonoBehaviour
 {
     public static string userInput = "";
@@ -13,6 +13,7 @@ public class PasswordPuzzle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("Active Camera: " + CameraScript.currentCameraName);
         if (CameraScript.currentCameraName == "Hallway Computer") {
             if (Input.inputString.Length > 0) {
                 if (Input.GetKeyDown(KeyCode.Backspace)) {
@@ -20,14 +21,18 @@ public class PasswordPuzzle : MonoBehaviour
                         userInput = BackspaceString(userInput);
                     }
                 } else if (Input.GetKeyDown(KeyCode.Return)) {
-
+                    if (isCorrectPassword()) {
+                        Debug.Log("PasswordValid");
+                    }
                     userInput = "";
                 } else {
                     userInput += Input.inputString;
                 }
             }
+        } else {
+            return;
         }
-        Debug.Log("Active Camera: " + CameraScript.currentCameraName);
+        
 
     }
 
@@ -38,7 +43,7 @@ public class PasswordPuzzle : MonoBehaviour
 
     string SortInput(string str) {
         char[] inputChars = str.ToCharArray();
-        inputChars.Sort(inputChars);
+        Array.Sort(inputChars);
         return new string(inputChars);
     }
 
