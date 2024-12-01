@@ -7,6 +7,7 @@ public class CameraScript : MonoBehaviour
 
     public GameObject[] Cameras;
     public DisplayCameraName camDisplay;
+    public static string currentCameraName;
 
     private int currentCamera = 0;
     private int cameraCount;
@@ -20,6 +21,7 @@ public class CameraScript : MonoBehaviour
         }
         Cameras[0].SetActive(true);
         Cameras[0].GetComponent<AudioListener>().enabled = true;
+        currentCameraName = Cameras[0].name;
     }
 
     void Update()
@@ -57,9 +59,10 @@ public class CameraScript : MonoBehaviour
     }
 
     void SetCamera(int cam, int prev) {
-        camDisplay.UpdateCameraDisplay(Cameras[cam].name);
         Cameras[cam].SetActive(true);
         Cameras[cam].GetComponent<AudioListener>().enabled = true;
+        camDisplay.UpdateCameraDisplay(Cameras[cam].name);
+        currentCameraName = Cameras[cam].name;
 
         Cameras[prev].SetActive(false);
         Cameras[prev].GetComponent<AudioListener>().enabled = false;

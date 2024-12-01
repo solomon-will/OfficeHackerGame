@@ -11,6 +11,6 @@ public class PasswordPuzzle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log("Active Camera: " + CameraScript.currentCameraName);
     }
 }
