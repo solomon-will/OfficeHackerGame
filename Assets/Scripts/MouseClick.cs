@@ -20,9 +20,5 @@ public class MouseClick : MonoBehaviour
         computerText.text = "Login Successful.";
         GlobalValues.stress += stressImpact;
 
-        foreach (GameObject block in puzzle) {
-            block.transform.position += new Vector3(0.05f, 0, 0);
-        }
-
     }
 }
