@@ -6,6 +6,7 @@ public class CylinderMovement : MonoBehaviour
     public NavMeshAgent agent;
     public float wanderRadius = 10f;
     public float wanderInterval = 1f;
+    public GameObject exclamationPoint;
 
     private Transform[] targetAreas;
     private float timer;
@@ -28,8 +29,10 @@ public class CylinderMovement : MonoBehaviour
 
     void Update()
     {
+        exclamationPoint.SetActive(false);
         if (isChasingRadio)
         {
+            exclamationPoint.SetActive(true);
             // Check if boss has reached the radio
             if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
             {
