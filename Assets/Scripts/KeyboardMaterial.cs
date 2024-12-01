@@ -1,23 +1,32 @@
 using UnityEngine;
-using UnityEngine.UI;
-
 
 public class KeyboardMaterial : MonoBehaviour
 {
     public GameObject targetObject;
-
     public Material newMaterial;
-
     public int stressImpact;
+    private AudioSource audioSource;
 
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+
+        if (audioSource == null)
+        {
+            Debug.LogError("AudioSource not found.");
+        }
+        else if (!audioSource.enabled)
+        {
+            audioSource.enabled = true;
+        }
+    }
 
     void OnMouseDown()
     {
-        
         if (targetObject != null)
         {
             Renderer targetRenderer = targetObject.GetComponent<Renderer>();
-            
+
             if (targetRenderer != null && newMaterial != null)
             {
                 if (targetRenderer.materials.Length > 1)
@@ -27,20 +36,17 @@ public class KeyboardMaterial : MonoBehaviour
                     materials[1] = newMaterial;
 
                     targetRenderer.materials = materials;
-
-                    Debug.Log("Second material changed!");
-                }
-                else
-                {
-                    Debug.Log("Target object does not have a second material!");
                 }
             }
 
             GlobalValues.stress += stressImpact;
+
+            if (audioSource != null && audioSource.enabled)
+            {
+                audioSource.Play();
+            }
         }
 
         targetObject = null;
-
-        
     }
 }
