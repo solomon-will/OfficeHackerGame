@@ -4,21 +4,28 @@ using TMPro;
 using System;
 public class PasswordPuzzle : MonoBehaviour
 {
-    public static string userInput = "";
-    public static bool isComputerOn = false;
+    public static string userInput;
+    public static bool isComputerOn;
     public string password;
     public TextMeshPro passwordDisplay;
     public TextMeshPro computerDisplay;
+    private int stressImpact;
+    private bool isLoggedIn;
 
 
     void Start()
     {
+        userInput = "";
+        isComputerOn = false;
+        isLoggedIn = false;
+        stressImpact = 20;
+
         
     }
 
     void Update()
     {
-        if (CameraScript.currentCameraName == "Hallway Computer" && isComputerOn) {
+        if (CameraScript.currentCameraName == "Hallway Computer" && isComputerOn && !isLoggedIn) {
             passwordDisplay.text = userInput;
             if (Input.inputString.Length > 0) {
                 if (Input.GetKeyDown(KeyCode.Backspace)) {
@@ -28,6 +35,9 @@ public class PasswordPuzzle : MonoBehaviour
                 } else if (Input.GetKeyDown(KeyCode.Return)) {
                     if (isCorrectPassword()) {
                         computerDisplay.text = "Login Successful";
+                        GlobalValues.stress += stressImpact;
+                        isLoggedIn = true;
+                        
                     } else {
                         computerDisplay.text = "Try Again";
                     }
