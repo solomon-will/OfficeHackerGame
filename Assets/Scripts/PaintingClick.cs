@@ -6,10 +6,36 @@ public class PaintingClick : MonoBehaviour
     public GameObject painting;
     public GameObject paintingBorder;
     public int stressImpact;
+    private AudioSource audioSource;
 
-    void OnMouseDown() {
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+
+        if (audioSource == null)
+        {
+            Debug.LogError("AudioSource not found.");
+        }
+        else if (!audioSource.enabled)
+        {
+            audioSource.enabled = true;
+        }
+    }
+
+    void OnMouseDown()
+    {
         GlobalValues.stress += stressImpact;
-        Destroy(painting);
-        Destroy(paintingBorder);
+
+        if (audioSource != null && audioSource.enabled)
+        {
+            audioSource.Play();
+            Destroy(painting, audioSource.clip.length);
+            Destroy(paintingBorder, audioSource.clip.length);
+        }
+        else
+        {
+            Destroy(painting);
+            Destroy(paintingBorder);
+        }
     }
 }

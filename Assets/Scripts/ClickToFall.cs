@@ -3,20 +3,30 @@ using UnityEngine;
 public class ClickToFall : MonoBehaviour
 {
     public Rigidbody fallingBlockBody;
+    private AudioSource audioSource;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         fallingBlockBody = GetComponent<Rigidbody>();
+        audioSource = GetComponent<AudioSource>();
+
+        if (audioSource == null)
+        {
+            Debug.LogError("AudioSource not found.");
+        }
+        else if (!audioSource.enabled)
+        {
+            audioSource.enabled = true;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnMouseDown()
     {
-        
-    }
-
-    void OnMouseDown() {
         fallingBlockBody.useGravity = true;
+
+        if (audioSource != null && audioSource.enabled)
+        {
+            audioSource.Play();
+        }
     }
 }

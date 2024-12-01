@@ -8,8 +8,24 @@ public class MouseClick : MonoBehaviour
     public int stressImpact;
     public GameObject[] puzzle;
     private bool alreadyClicked = false;
+    private AudioSource audioSource;
 
-    void OnMouseDown() {
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+
+        if (audioSource == null)
+        {
+            Debug.LogError("AudioSource not found on this GameObject.");
+        }
+        else if (!audioSource.enabled)
+        {
+            audioSource.enabled = true;
+        }
+    }
+
+    void OnMouseDown()
+    {
         if (alreadyClicked)
         {
             return;
@@ -19,8 +35,11 @@ public class MouseClick : MonoBehaviour
         PasswordPuzzle.isComputerOn = true;
 
         computerText.text = "Enter Password";
-        
         GlobalValues.stress += stressImpact;
 
+        if (audioSource != null && audioSource.enabled)
+        {
+            audioSource.Play();
+        }
     }
 }
