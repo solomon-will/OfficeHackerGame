@@ -63,6 +63,8 @@ public class CameraScript : MonoBehaviour
         Cameras[cam].GetComponent<AudioListener>().enabled = true;
         camDisplay.UpdateCameraDisplay(Cameras[cam].name);
         currentCameraName = Cameras[cam].name;
+        Canvas mainCanvas = FindObjectOfType<Canvas>();
+        mainCanvas.worldCamera = Cameras[cam].GetComponent<Camera>();
 
         Cameras[prev].SetActive(false);
         Cameras[prev].GetComponent<AudioListener>().enabled = false;
