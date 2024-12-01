@@ -17,7 +17,7 @@ public class MouseClick : MonoBehaviour
 
         alreadyClicked = true;
 
-        computerText.text = "Login Successful.";
+        computerText.text = "Enter Password";
         GlobalValues.stress += stressImpact;
 
     }
