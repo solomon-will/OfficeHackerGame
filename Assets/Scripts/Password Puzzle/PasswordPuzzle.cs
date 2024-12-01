@@ -1,20 +1,25 @@
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 using System;
 public class PasswordPuzzle : MonoBehaviour
 {
     public static string userInput = "";
+    public static bool isComputerOn = false;
     public string password;
+    public TextMeshPro passwordDisplay;
+    public TextMeshPro computerDisplay;
+
 
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
-        Debug.Log("Active Camera: " + CameraScript.currentCameraName);
-        if (CameraScript.currentCameraName == "Hallway Computer") {
+        if (CameraScript.currentCameraName == "Hallway Computer" && isComputerOn) {
+            passwordDisplay.text = userInput;
             if (Input.inputString.Length > 0) {
                 if (Input.GetKeyDown(KeyCode.Backspace)) {
                     if (userInput.Length > 0) {
@@ -22,7 +27,9 @@ public class PasswordPuzzle : MonoBehaviour
                     }
                 } else if (Input.GetKeyDown(KeyCode.Return)) {
                     if (isCorrectPassword()) {
-                        Debug.Log("PasswordValid");
+                        computerDisplay.text = "Login Successful";
+                    } else {
+                        computerDisplay.text = "Try Again";
                     }
                     userInput = "";
                 } else {

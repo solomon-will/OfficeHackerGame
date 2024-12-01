@@ -21,7 +21,6 @@ public class ProgressBar : MonoBehaviour
     {
         deltaTimeSnapshot = Time.deltaTime;
         timeElapsed += deltaTimeSnapshot;
-        Debug.Log(timeElapsed);
         timeRemain -= deltaTimeSnapshot;
 
         timer.UpdateTimer(timeRemain.ToString("F1"));

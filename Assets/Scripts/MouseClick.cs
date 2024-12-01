@@ -16,8 +16,10 @@ public class MouseClick : MonoBehaviour
         }
 
         alreadyClicked = true;
+        PasswordPuzzle.isComputerOn = true;
 
         computerText.text = "Enter Password";
+        
         GlobalValues.stress += stressImpact;
 
     }
