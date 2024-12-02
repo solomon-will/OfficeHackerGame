@@ -54,7 +54,10 @@ public class CylinderMovement : MonoBehaviour
             // Check if boss has reached the mouse
             if (!agent.pathPending && agent.remainingDistance <= (agent.stoppingDistance + 0.02))
             {
-                TurnOffRadio();
+                if(PasswordPuzzle.isLoggedIn == false){
+
+                }
+
                 exclamationPoint.SetActive(false);
                 runToMouse = false; // Resume wandering behavior
             }
