@@ -12,8 +12,11 @@ public class CylinderMovement : MonoBehaviour
     private float timer;
     private int currentTargetIndex = 0;
 
-    private bool isChasingRadio = false; // Tracks if the boss is chasing the radio
+    private bool runToRadio = false; // Tracks if the boss is chasing the radio
     private GameObject radioObject; // Tracks the radio object
+
+    private bool runToMouse = false; // Tracks if the boss is chasing the mouse
+    private GameObject mouseObject; // Tracks the mouse object
 
     void Start()
     {
@@ -24,14 +27,15 @@ public class CylinderMovement : MonoBehaviour
         targetAreas = manager.GetTargetAreas();
         exclamationPoint.SetActive(false);
 
-        // Subscribe to the radio event
+        // Subscribe to the radio and mouse event
         RadioClick.OnRadioActivated += MoveToRadio;
+        MouseClick.MouseActivated += MoveToMouse;
     }
 
     void Update()
     {
         
-        if (isChasingRadio)
+        if (runToRadio)
         {
             
             // Check if boss has reached the radio
@@ -39,7 +43,20 @@ public class CylinderMovement : MonoBehaviour
             {
                 TurnOffRadio();
                 exclamationPoint.SetActive(false);
-                isChasingRadio = false; // Resume wandering behavior
+                runToRadio = false; // Resume wandering behavior
+            }
+            return;
+        }
+
+        if (runToMouse)
+        {
+            
+            // Check if boss has reached the mouse
+            if (!agent.pathPending && agent.remainingDistance <= (agent.stoppingDistance + 0.02))
+            {
+                TurnOffRadio();
+                exclamationPoint.SetActive(false);
+                runToMouse = false; // Resume wandering behavior
             }
             return;
         }
@@ -67,6 +84,7 @@ public class CylinderMovement : MonoBehaviour
     {
         // Unsubscribe to avoid memory leaks
         RadioClick.OnRadioActivated -= MoveToRadio;
+        MouseClick.MouseActivated -= MoveToMouse;
     }
 
     void WanderRandomly()
@@ -91,7 +109,7 @@ public class CylinderMovement : MonoBehaviour
         if (radioObject != null)
         {
             // Set chasing state and move toward the radio
-            isChasingRadio = true;
+            runToRadio = true;
             agent.SetDestination(radioPosition);
             exclamationPoint.SetActive(true);
             Debug.Log("Boss is moving to the radio at " + radioPosition);
@@ -112,6 +130,25 @@ public class CylinderMovement : MonoBehaviour
                 radioScript.TurnOff();
                 Debug.Log("Boss turned off the radio.");
             }
+        }
+    }
+
+    void MoveToMouse(Vector3 mousePosition)
+    {
+        // Make sure the mouseObject is found when needed
+        mouseObject = FindObjectOfType<MouseClick>()?.gameObject;
+
+        if (mouseObject != null)
+        {
+            // Set chasing state and move toward the mouse
+            runToMouse = true;
+            agent.SetDestination(mousePosition);
+            exclamationPoint.SetActive(true);
+            Debug.Log("Boss is moving to the Mouse at " + mousePosition);
+        }
+        else
+        {
+            Debug.LogError("Mouse object is not assigned!");
         }
     }
 

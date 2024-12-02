@@ -10,6 +10,8 @@ public class MouseClick : MonoBehaviour
     private bool alreadyClicked = false;
     private AudioSource audioSource;
 
+    public static event System.Action<Vector3> MouseActivated;
+
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -30,6 +32,8 @@ public class MouseClick : MonoBehaviour
         {
             return;
         }
+
+        MouseActivated?.Invoke(transform.position);
 
         alreadyClicked = true;
         PasswordPuzzle.isComputerOn = true;
