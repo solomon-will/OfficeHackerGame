@@ -10,7 +10,7 @@ public class PasswordPuzzle : MonoBehaviour
     public TextMeshPro passwordDisplay;
     public TextMeshPro computerDisplay;
     private int stressImpact;
-    public bool isLoggedIn;
+    public static bool isLoggedIn;
 
 
     void Start()

@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class CylinderMovement : MonoBehaviour
 {
@@ -55,7 +56,7 @@ public class CylinderMovement : MonoBehaviour
             if (!agent.pathPending && agent.remainingDistance <= (agent.stoppingDistance + 0.02))
             {
                 if(PasswordPuzzle.isLoggedIn == false){
-
+                    SceneManager.LoadScene(3);
                 }
 
                 exclamationPoint.SetActive(false);
