@@ -22,6 +22,7 @@ public class CylinderMovement : MonoBehaviour
 
         TargetAreaManager manager = FindObjectOfType<TargetAreaManager>();
         targetAreas = manager.GetTargetAreas();
+        exclamationPoint.SetActive(false);
 
         // Subscribe to the radio event
         RadioClick.OnRadioActivated += MoveToRadio;
@@ -29,14 +30,15 @@ public class CylinderMovement : MonoBehaviour
 
     void Update()
     {
-        exclamationPoint.SetActive(false);
+        
         if (isChasingRadio)
         {
-            exclamationPoint.SetActive(true);
+            
             // Check if boss has reached the radio
-            if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
+            if (!agent.pathPending && agent.remainingDistance <= (agent.stoppingDistance + 0.02))
             {
                 TurnOffRadio();
+                exclamationPoint.SetActive(false);
                 isChasingRadio = false; // Resume wandering behavior
             }
             return;
@@ -58,6 +60,8 @@ public class CylinderMovement : MonoBehaviour
             timer = 0;
         }
     }
+
+
 
     void OnDestroy()
     {
@@ -89,6 +93,7 @@ public class CylinderMovement : MonoBehaviour
             // Set chasing state and move toward the radio
             isChasingRadio = true;
             agent.SetDestination(radioPosition);
+            exclamationPoint.SetActive(true);
             Debug.Log("Boss is moving to the radio at " + radioPosition);
         }
         else
